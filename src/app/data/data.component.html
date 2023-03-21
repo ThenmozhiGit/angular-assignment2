@@ -1,0 +1,29 @@
+<div class="bootsrap">
+    <div class="row">
+        <div class="xs-col-12">
+            <h3> Assignment 2: Data binding </h3>
+                <hr>
+
+                <label>Property Binding:</label>
+
+                <input type="text" [(ngModel)]="userName">
+                <hr>
+
+                <label>String interpolation:</label>
+                <input type="text" value={{userName}}>
+                <hr>
+
+                <p>String interpolation: {{userName}}</p>
+                <button type="button" class="btn btn-primary" [disabled]="!userName" (click)="onClickButton()">
+                    Reset</button>
+        </div>
+    </div>
+</div>
+
+
+<!--<input type ="text" name="userName" [value] = "userName" (keyup) ="onClickUserName($event)"> <hr>
+<input type ="text" name="userName" [(ngModel)] = "userName"> <hr>
+
+<label>String interpolation:</label>
+<input type ="text" name="userName" value = {{userName}}><hr>
+-->
